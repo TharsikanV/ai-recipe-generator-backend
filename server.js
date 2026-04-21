@@ -8,6 +8,7 @@ import userRoutes from './routes/users.js';
 import pantryRoutes from './routes/pantry.js';
 import recipeRoutes from './routes/recipes.js';
 import mealPlanRoutes from './routes/mealPlans.js';
+import shoppingListRoutes from './routes/shoppingList.js';
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/pantry', pantryRoutes);
 app.use('/api/recipes', recipeRoutes);
 app.use('/api/meal-plans', mealPlanRoutes);
+app.use('/api/shopping-list', shoppingListRoutes);
 
 // global error handler
 app.use((err, req, res, next) => {
